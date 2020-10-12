@@ -25,23 +25,22 @@
   - tolower
   - calloc (using malloc)
   - calloc (using malloc)
-### Part 2 LIBC functions
+### Part 2 Additional functions
 Function | Description
 ------------ | -------------
+ft_substr
 ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
+ft_strtrim |
+ft_split | 
+ft_itoa |
+ft_strmapi |
+ft_putchar_fd |
+ft_putstr_fd |
+ft_putendl_fd |
+ft_putnbr_fd |
 
-- Part 2 Additional functions
-  - ft_substr
-  - ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
-  - ft_strtrim
-  - ft_split
-  - ft_itoa
-  - ft_strmapi
-  - ft_putchar_fd
-  - ft_putstr_fd
-  - ft_putendl_fd
-  - ft_putnbr_fd
-- Bonus Part
+### Bonus Part
+Function | Description
   - ft_lstnew
   - ft_lstadd_front
   - ft_lstsize
