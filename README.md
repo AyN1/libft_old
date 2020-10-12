@@ -1,10 +1,36 @@
 # libft
 
-- Part 1
+- Part 1 LIBC functions
+  -memset
+  -bzero
+  -memcpy
+  -memccpy
+  -memmove
+  -memchr
+  -memcmp
+  -strlen
+  -strlcpy
+  -strlcat
+  -strchr
+  -strrchr
+  -strnstr
+  -strncmp
+  -atoi
+  -isalpha
+  -isdigit
+  -isalnum
+  -isascii
+  -isprint
+  -toupper
+  -tolower
+  using malloc
+  -calloc
+  -calloc
+- Part 2 Additional functions
   -
   -
   -
-- Part 2
+- Bonus Part
   -
   -
   -
