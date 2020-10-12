@@ -1,10 +1,7 @@
 # libft
-### Part 1 LIBC functions
-Function | Description
------------- | -------------
-ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
+
 - Part 1 LIBC functions
-  - memset
+	- memset
   - bzero
   - memcpy
   - memccpy
@@ -28,6 +25,11 @@ ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the
   - tolower
   - calloc (using malloc)
   - calloc (using malloc)
+### Part 2 LIBC functions
+Function | Description
+------------ | -------------
+ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
+
 - Part 2 Additional functions
   - ft_substr
   - ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
