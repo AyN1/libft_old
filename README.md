@@ -1,5 +1,5 @@
 # libft
-
+First Header | Second Header
 - Part 1 LIBC functions
   - memset
   - bzero
@@ -27,7 +27,7 @@
   - calloc (using malloc)
 - Part 2 Additional functions
   - ft_substr
-  - ft_strjoin `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
+  - ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
   - ft_strtrim
   - ft_split
   - ft_itoa
