@@ -1,4 +1,5 @@
 # libft
+## Part 1 LIBC functions
 Function | Description
 ------------ | -------------
 ft_strjoin | `Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.`
