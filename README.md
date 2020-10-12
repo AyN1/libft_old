@@ -28,9 +28,9 @@
 ### Part 2 Additional functions
 Function | Description
 ------------ | -------------
-ft_substr
+ft_substr | Allocates (with malloc(3)) and returns a substring from the string given in argument. The substring begins at index ’start’ and is of maximum size ’len’
 ft_strjoin | Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.
-ft_strtrim |
+ft_strtrim | Allocates (with malloc(3)) and returns a copy of the string given as argument without the characters specified in the set argument at the beginning and the end of the string.
 ft_split | 
 ft_itoa |
 ft_strmapi |
