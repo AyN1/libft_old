@@ -41,7 +41,7 @@ ft_putendl_fd | void ft_putendl_fd(char *s, int fd);
 ft_putnbr_fd | void ft_putnbr_fd(int n, int fd);
 
 *use malloc
-*** use malloc and free
+***use malloc and free
 
 ### Bonus Part
 Function | Prototype
@@ -58,7 +58,7 @@ ft_lstmap*** | t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(vo
 
 *use malloc
 **use free
-*** use malloc and free
+***use malloc and free
 ### My Additional functions
 Function | Prototype
 -------- | ---------
