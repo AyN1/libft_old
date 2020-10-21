@@ -41,8 +41,8 @@ ft_putchar_fd | void ft_putchar_fd(char c, int fd);
 ft_putstr_fd | void ft_putstr_fd(char *s, int fd);
 ft_putendl_fd | void ft_putendl_fd(char *s, int fd);
 ft_putnbr_fd | void ft_putnbr_fd(int n, int fd);
--------- | ---------
-*malloc
+
+*use malloc
 
 ### Bonus Part
 Function | Description
