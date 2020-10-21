@@ -29,7 +29,7 @@ calloc (using malloc)
 calloc (using malloc)
 ### Part 2 Additional functions
 Function | Prototype | Description
--- | ---- | --
+-- | ----------- | --
 ft_substr | char *ft_substr(char const *s, unsigned int start, size_t len); | Allocates (with malloc(3)) and returns a substring from the string given in argument. The substring begins at index ’start’ and is of maximum size ’len’
 ft_strjoin | char *ft_strjoin(char const *s1, char const *s2); | Allocates (with malloc(3)) and returns a new string, result of the concatenation of s1 and s2.
 ft_strtrim | char *ft_strtrim(char const *s1, char const *set); | Allocates (with malloc(3)) and returns a copy of the string given as argument without the characters specified in the set argument at the beginning and the end of the string.
