@@ -1,37 +1,35 @@
 # libft
 
 ### Part 1 LIBC functions
-Function | Description
------------- | -------------
-memset
-bzero
-memcpy
-memccpy
-memmove
-memchr
-memcmp
-strlen
-strlcpy
-strlcat
-strchr
-strrchr
-strnstr
-strncmp
-atoi
-isalpha
-isdigit
-isalnum
-isascii
-isprint
-toupper
-tolower
-calloc (using malloc)
-calloc (using malloc)
+- memset
+- bzero
+- memcpy
+- memccpy
+- memmove
+- memchr
+- memcmp
+- strlen
+- strlcpy
+- strlcat
+- strchr
+- strrchr
+- strnstr
+- strncmp
+- atoi
+- isalpha
+- isdigit
+- isalnum
+- isascii
+- isprint
+- toupper
+- tolower
+- calloc (using malloc)
+- calloc (using malloc)
 
 ### Part 2 Additional functions
 Function | Prototype
 -------- | ---------
-ft_substr__*__ | char *ft_substr(char const *s, unsigned int start, size_t len);
+ft_substr* | char *ft_substr(char const *s, unsigned int start, size_t len);
 ft_strjoin* | char *ft_strjoin(char const *s1, char const *s2);
 ft_strtrim* | char *ft_strtrim(char const *s1, char const *set);
 ft_split* | char **ft_split(char const *s, char c);
