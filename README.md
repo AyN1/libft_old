@@ -43,18 +43,21 @@ ft_putnbr_fd | void ft_putnbr_fd(int n, int fd);
 *use malloc
 
 ### Bonus Part
-Function | Description
------------- | -------------
-ft_lstnew |
-ft_lstadd_front |
-ft_lstsize |
-ft_lstlast |
-ft_lstadd_back |
-ft_lstdelone |
-ft_lstclear |
-ft_lstiter |
-ft_lstmap |
+Function | Prototype
+-------- | ---------
+ft_lstnew* | t_list *ft_lstnew(void *content);
+ft_lstadd_front | void ft_lstadd_front(t_list **alst, t_list *new);
+ft_lstsize | int ft_lstsize(t_list *lst);
+ft_lstlast | t_list *ft_lstlast(t_list *lst);
+ft_lstadd_back | void ft_lstadd_back(t_list **alst, t_list *new);
+ft_lstdelone** | void ft_lstdelone(t_list *lst, void (*del)(void*));
+ft_lstclear** | void ft_lstclear(t_list **lst, void (*del)(void*));
+ft_lstiter | void ft_lstiter(t_list *lst, void (*f)(void *));
+ft_lstmap*** | t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-
+*use malloc
+**use free
+*** use malloc and free
 ### My Additional functions
-Function | Description
+Function | Prototype
+-------- | ---------
