@@ -24,7 +24,7 @@
 - toupper
 - tolower
 - calloc (using malloc)
-- calloc (using malloc)
+- strdup (using malloc)
 
 ### Part 2 Additional functions
 Function | Prototype
