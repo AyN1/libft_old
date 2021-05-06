@@ -35,8 +35,10 @@ int	ft_strnequ(char const *s1, char const *s2, size_t n)
 			++i;
 		if (s1[i] == s2[i])
 			return (1);
+		else if (!n)
+			return (1);
 		else
-			return (!n ? 1 : 0);
+			return (0);
 	}
 	return (0);
 }

@@ -101,6 +101,11 @@ char			*ft_strndup(const char *s1, size_t n);
 size_t			ft_countword(char const *s, char c);
 char			*ft_strtolower(char *str);
 char			*ft_strtoupper(char *str);
+int				ft_iswhitespace(char c);
+
+/*
+** Old Libft
+*/
 
 void			*ft_memalloc(size_t size);
 void			ft_memdel(void **ap);

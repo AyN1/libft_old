@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void		*free_tab(char **tab)
+static void	*free_tab(char **tab)
 {
 	if (tab == NULL)
 		return (NULL);
@@ -22,7 +22,7 @@ static void		*free_tab(char **tab)
 	return (NULL);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**tab;
 	size_t	i;
@@ -33,12 +33,14 @@ char			**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	j = 0;
-	if (!(tab = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *))))
+	tab = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
+	if (!tab)
 		return (NULL);
 	while (i < ft_countword(s, c))
 	{
 		k = 0;
-		if (!(tab[i] = ft_strnew(ft_countword(&s[j], c) + 1)))
+		tab[i] = ft_strnew(ft_countword(&s[j], c) + 1);
+		if (!tab[i])
 			return (free_tab(tab));
 		while (s[j] == c)
 			++j;

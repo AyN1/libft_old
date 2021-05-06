@@ -23,5 +23,5 @@ char	*ft_strrchr(const char *s, int c)
 		--i;
 	if (i == 0 && s[i] != c)
 		return (NULL);
-	return ((char*)s + i);
+	return ((char *)s + i);
 }

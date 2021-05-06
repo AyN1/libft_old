@@ -36,7 +36,7 @@ SRC_PERSO = ft_strcat.c ft_strcmp.c ft_strcpy.c ft_strncat.c ft_strncpy.c \
 			ft_memalloc.c ft_putchar.c ft_putendl.c ft_putnbr.c ft_strnew.c \
 			ft_strnequ.c ft_strequ.c ft_striter.c ft_striteri.c \
 			ft_strdel.c ft_strmap.c ft_strclr.c ft_memdel.c ft_countword.c \
-			ft_strtolower.c ft_strtoupper.c
+			ft_strtolower.c ft_strtoupper.c ft_iswhitespace.c
 
 OBJ =	$(SRC_P1:.c=.o) $(SRC_P2:.c=.o) $(SRC_PERSO:.c=.o)
 
@@ -63,3 +63,7 @@ fclean: clean
 	@/bin/rm -f $(NAME)
 
 re: fclean all
+
+so:
+	$(CC) -fPIC $(CFLAGS) $(SRC)
+	gcc -shared -o libft.so $(OBJ)

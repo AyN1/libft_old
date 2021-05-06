@@ -12,11 +12,12 @@
 
 #include "libft.h"
 
-char		*ft_strndup(const char *s1, size_t n)
+char	*ft_strndup(const char *s1, size_t n)
 {
 	char	*clone;
 
-	if ((clone = ft_strnew(n)) == NULL)
+	clone = ft_strnew(n);
+	if (clone == NULL)
 		return (NULL);
 	return (ft_strncpy(clone, s1, n));
 }

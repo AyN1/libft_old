@@ -23,40 +23,53 @@
 **	Param. #1 L’entier à convertir en une chaîne de caractères.
 **	Retour La chaîne de caractères représentant l’entier passé en paramètre.
 **	Fonctions libc malloc(3)
+**
+** (Info)line: 59
+** assign NULL byte at str[len] and then decrement the variable len
 */
 
-static void	itoa_is_negative(int *n, int *temp)
+int	ft_len(int n)
 {
-	if (*n < 0)
+	int	len;
+
+	len = 0;
+	if (n < 0)
 	{
-		*temp = 1;
-		*n = -*n;
+		n = n * -1;
+		++len;
 	}
+	while (n > 0)
+	{
+		n = n / 10;
+		len++;
+	}
+	return (len);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int		temp;
 	int		len;
 	char	*str;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	temp = n;
-	len = 2;
-	while (temp /= 10)
-		++len;
-	itoa_is_negative(&n, &temp);
-	len += temp;
-	if (!(str = (char *)malloc(sizeof(char) * len)))
+	len = ft_len(n);
+	str = (char *)malloc(sizeof(char) * len + 1);
+	if (!str)
 		return (NULL);
-	str[--len] = '\0';
-	while (len--)
+	str[len--] = '\0';
+	if (!n)
+		str[0] = '0';
+	if (n < 0)
+	{
+		str[0] = '-';
+		n = n * -1;
+	}
+	while (n > 0)
 	{
 		str[len] = (n % 10) + '0';
 		n = n / 10;
+		len--;
 	}
-	if (temp)
-		str[0] = '-';
 	return (str);
 }

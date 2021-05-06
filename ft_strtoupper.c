@@ -20,7 +20,7 @@ char	*ft_strtoupper(char *str)
 	i = 0;
 	if (str == NULL)
 		return (NULL);
-	newstr = (char*)malloc(ft_strlen(str) + 1);
+	newstr = (char *)malloc(ft_strlen(str) + 1);
 	if (newstr == NULL)
 		return (NULL);
 	ft_strcpy(newstr, str);
