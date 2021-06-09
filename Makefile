@@ -6,41 +6,95 @@
 #    By: abicer <abicer@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/14 15:35:09 by abicer            #+#    #+#              #
-#    Updated: 2020/10/21 03:13:26 by abicer           ###   ########.fr        #
+#    Updated: 2021/06/09 20:00:54 by abicer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME =	libft.a
 
-INCLUDE = libft.h
+INCLUDE = inc/libft.h
 
 CC =	clang
-CFLAGS =	-Wall -Werror -Wextra
+CFLAGS =	-Wall -Werror -Wextra -I./inc
 
-SRC_P1 = 	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-			ft_isdigit.c ft_isprint.c ft_tolower.c ft_toupper.c \
-			ft_strchr.c  ft_strdup.c ft_strlcat.c ft_strlen.c  ft_strncmp.c  \
-			ft_strnstr.c ft_strrchr.c  ft_memset.c ft_memmove.c ft_memcpy.c \
-			ft_memcmp.c ft_memccpy.c ft_memchr.c ft_calloc.c ft_strlcpy.c
+SRC_LST =	src/lst/ft_lstadd_back_bonus.c \
+			src/lst/ft_lstadd_front_bonus.c \
+			src/lst/ft_lstclear_bonus.c \
+			src/lst/ft_lstdelone_bonus.c \
+			src/lst/ft_lstiter_bonus.c \
+			src/lst/ft_lstlast_bonus.c \
+			src/lst/ft_lstmap_bonus.c \
+			src/lst/ft_lstnew_bonus.c \
+			src/lst/ft_lstsize_bonus.c
 
-SRC_P2 =	ft_itoa.c ft_putstr_fd.c ft_putchar_fd.c ft_putendl_fd.c \
-			ft_putnbr_fd.c ft_strsub.c ft_strtrim.c ft_split.c \
-			ft_strjoin.c ft_strmapi.c ft_substr.c
+SRC_MEM =	src/mem/ft_bzero.c \
+			src/mem/ft_calloc.c \
+			src/mem/ft_memalloc.c \
+			src/mem/ft_memccpy.c \
+			src/mem/ft_memchr.c \
+			src/mem/ft_memcmp.c \
+			src/mem/ft_memcpy.c \
+			src/mem/ft_memdel.c \
+			src/mem/ft_memmove.c \
+			src/mem/ft_memset.c
 
-SRC_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
-			ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
-			ft_lstmap_bonus.c
+SRC_OUT = 	src/out/ft_putchar.c \
+			src/out/ft_putchar_fd.c \
+			src/out/ft_putendl.c \
+			src/out/ft_putendl_fd.c \
+			src/out/ft_putnbr.c \
+			src/out/ft_putnbr_fd.c \
+			src/out/ft_putstr.c \
+			src/out/ft_putstr_fd.c
 
-SRC_PERSO = ft_strcat.c ft_strcmp.c ft_strcpy.c ft_strncat.c ft_strncpy.c \
-			ft_strstr.c ft_putstr.c \
-			ft_memalloc.c ft_putchar.c ft_putendl.c ft_putnbr.c ft_strnew.c \
-			ft_strnequ.c ft_strequ.c ft_striter.c ft_striteri.c \
-			ft_strdel.c ft_strmap.c ft_strclr.c ft_memdel.c ft_countword.c \
-			ft_strtolower.c ft_strtoupper.c ft_iswhitespace.c
+SRC_STR =	src/str/ft_split.c \
+			src/str/ft_strcat.c \
+			src/str/ft_strchr.c \
+			src/str/ft_strclr.c \
+			src/str/ft_strcmp.c \
+			src/str/ft_strcpy.c \
+			src/str/ft_strdel.c \
+			src/str/ft_strdup.c \
+			src/str/ft_strequ.c \
+			src/str/ft_striter.c \
+			src/str/ft_striteri.c \
+			src/str/ft_strjoin.c \
+			src/str/ft_strlcat.c \
+			src/str/ft_strlcpy.c \
+			src/str/ft_strlen.c \
+			src/str/ft_strmap.c \
+			src/str/ft_strmapi.c \
+			src/str/ft_strncat.c \
+			src/str/ft_strncmp.c \
+			src/str/ft_strncpy.c \
+			src/str/ft_strndup.c \
+			src/str/ft_strnequ.c \
+			src/str/ft_strnew.c \
+			src/str/ft_strnstr.c \
+			src/str/ft_strrchr.c \
+			src/str/ft_strstr.c \
+			src/str/ft_strsub.c \
+			src/str/ft_strtolower.c \
+			src/str/ft_strtoupper.c \
+			src/str/ft_strtrim.c \
+			src/str/ft_substr.c \
 
-OBJ =	$(SRC_P1:.c=.o) $(SRC_P2:.c=.o) $(SRC_PERSO:.c=.o)
+SRC_UTIL =	src/util/ft_atoi.c \
+			src/util/ft_countword.c \
+			src/util/ft_isalnum.c \
+			src/util/ft_isalpha.c \
+			src/util/ft_isascii.c \
+			src/util/ft_isdigit.c \
+			src/util/ft_isprint.c \
+			src/util/ft_iswhitespace.c \
+			src/util/ft_itoa.c \
+			src/util/ft_tolower.c \
+			src/util/ft_toupper.c
 
-BONUSOBJ = $(SRC_BONUS:.c=.o)
+
+OBJ =	$(SRC_MEM:.c=.o) $(SRC_OUT:.c=.o) $(SRC_STR:.c=.o) $(SRC_UTIL:.c=.o)
+
+BONUSOBJ = $(SRC_LST:.c=.o)
 
 .PHONY: clean fclean re
 
