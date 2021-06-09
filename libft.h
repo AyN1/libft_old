@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 16:54:46 by abicer            #+#    #+#             */
-/*   Updated: 2020/10/21 03:13:20 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/09 16:34:54 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ char			*ft_strtrim(char const *s, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void			ft_putchar_fd(char c, int fd);
-void			ft_putstr_fd(char const *s, int fd);
+int				ft_putchar_fd(char c, int fd);
+int				ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 
@@ -118,8 +118,8 @@ char			*ft_strmap(char const *s, char (*f)(char));
 int				ft_strequ(char const *s1, char const *s2);
 int				ft_strnequ(char const *s1, char const *s2, size_t n);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
-void			ft_putchar(char c);
-void			ft_putstr(char const *s);
+int				ft_putchar(char c);
+int				ft_putstr(char const *s);
 void			ft_putendl(char const *s);
 void			ft_putnbr(int n);
 

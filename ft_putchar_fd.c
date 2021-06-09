@@ -6,14 +6,14 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/26 20:17:23 by abicer            #+#    #+#             */
-/*   Updated: 2020/10/21 03:12:26 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/09 16:50:36 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	return (write(fd, &c, 1));
 }

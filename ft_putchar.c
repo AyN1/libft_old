@@ -6,13 +6,13 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/26 20:18:44 by abicer            #+#    #+#             */
-/*   Updated: 2020/10/21 03:12:28 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/09 16:50:20 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	ft_putchar_fd(c, 1);
+	return (ft_putchar_fd(c, 1));
 }
