@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 18:40:02 by abicer            #+#    #+#             */
-/*   Updated: 2021/06/10 20:32:54 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/10 20:50:47 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ long	ft_atol(char *str)
 	res = 0;
 	while (ft_isdigit(*str))
 	{
-		if (res < LONG_MAX - (*str - '0') / 10)
+		if (res < LONG_MAX)
 			res = 10 * res + (*str - '0');
 		if (res < 0 && sign == -1)
 			res = LONG_MIN;
