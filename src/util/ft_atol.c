@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 18:40:02 by abicer            #+#    #+#             */
-/*   Updated: 2021/06/10 20:50:47 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/10 22:42:30 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #define LONG_MAX 0x7fffffffffffffff
 #define LONG_MIN -0x8000000000000000
 
-long	ft_atol(char *str)
+long	ft_atol(const char *str)
 {
 	long	res;
 	int		sign;

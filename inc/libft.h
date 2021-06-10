@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 16:54:46 by abicer            #+#    #+#             */
-/*   Updated: 2021/06/10 22:05:29 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/10 22:41:40 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ char			*ft_strncat(char *s1, const char *s2, size_t n);
 char			*ft_strstr(const char *haystack, const char *needle);
 int				ft_strcmp(const char *s1, const char *s2);
 char			*ft_strndup(const char *s1, size_t n);
-long			ft_atol(char *str);
+long			ft_atol(const char *str);
 
 /*
 ** P. Perso +
