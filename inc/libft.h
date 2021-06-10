@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 16:54:46 by abicer            #+#    #+#             */
-/*   Updated: 2021/06/09 16:34:54 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/10 20:35:51 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ char			*ft_strncat(char *s1, const char *s2, size_t n);
 char			*ft_strstr(const char *haystack, const char *needle);
 int				ft_strcmp(const char *s1, const char *s2);
 char			*ft_strndup(const char *s1, size_t n);
+long			ft_atol(char *str);
 
 /*
 ** P. Perso +
@@ -102,6 +103,7 @@ size_t			ft_countword(char const *s, char c);
 char			*ft_strtolower(char *str);
 char			*ft_strtoupper(char *str);
 int				ft_iswhitespace(char c);
+
 
 /*
 ** Old Libft
