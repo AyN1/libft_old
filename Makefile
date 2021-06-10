@@ -6,7 +6,7 @@
 #    By: abicer <abicer@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/14 15:35:09 by abicer            #+#    #+#              #
-#    Updated: 2021/06/09 20:00:54 by abicer           ###   ########.fr        #
+#    Updated: 2021/06/10 18:29:17 by abicer           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,7 @@ SRC_STR =	src/str/ft_split.c \
 			src/str/ft_strtolower.c \
 			src/str/ft_strtoupper.c \
 			src/str/ft_strtrim.c \
-			src/str/ft_substr.c \
+			src/str/ft_substr.c
 
 SRC_UTIL =	src/util/ft_atoi.c \
 			src/util/ft_countword.c \
