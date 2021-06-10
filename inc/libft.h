@@ -6,7 +6,7 @@
 /*   By: abicer <abicer@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 16:54:46 by abicer            #+#    #+#             */
-/*   Updated: 2021/06/10 20:35:51 by abicer           ###   ########.fr       */
+/*   Updated: 2021/06/10 22:05:29 by abicer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,6 @@ size_t			ft_countword(char const *s, char c);
 char			*ft_strtolower(char *str);
 char			*ft_strtoupper(char *str);
 int				ft_iswhitespace(char c);
-
 
 /*
 ** Old Libft
